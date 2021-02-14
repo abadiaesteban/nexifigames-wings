@@ -70,6 +70,8 @@ func Configure() *gin.Engine {
 		server.POST("/install", postServerInstall)
 		server.POST("/reinstall", postServerReinstall)
 		server.POST("/ws/deny", postServerDenyWSTokens)
+		server.POST("/mods/install", installMod)
+        server.POST("/mods/uninstall", uninstallMod)
 
 		// This archive request causes the archive to start being created
 		// this should only be triggered by the panel.

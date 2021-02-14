@@ -53,7 +53,7 @@ var versionCommand = &cobra.Command{
 	Use:   "version",
 	Short: "Prints the current executable version and exits.",
 	Run: func(cmd *cobra.Command, _ []string) {
-		fmt.Printf("wings v%s\nCopyright © 2018 - 2021 Dane Everitt & Contributors\n", system.Version)
+		fmt.Printf("wings v%s\nCopyright © 2018 - 2021 Dane Everitt & Nexifi Games\n", system.Version)
 	},
 }
 

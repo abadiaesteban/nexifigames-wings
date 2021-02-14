@@ -88,7 +88,7 @@ func diagnosticsCmdRun(cmd *cobra.Command, args []string) {
 	_ = dockerInfo
 
 	output := &strings.Builder{}
-	fmt.Fprintln(output, "Pterodactyl Wings - Diagnostics Report")
+	fmt.Fprintln(output, "Nexifi Games - Diagnostics Report")
 	printHeader(output, "Versions")
 	fmt.Fprintln(output, "         wings:", system.Version)
 	if dockerErr == nil {
